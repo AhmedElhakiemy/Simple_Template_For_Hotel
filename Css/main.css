@@ -1,0 +1,294 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:#DFAA5B;
+    --secondary-color:#957554;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+/* start header */
+.header{
+    background-color: white;
+    padding: 10px;
+    width: calc(100% - 40%);
+    margin: 0 auto;
+    
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+}
+.header ul a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: block;
+}
+.logo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.logo img{
+    width: 10%;
+}
+.header2{
+    margin-top: 15px;
+    background-color: black;
+    padding: 20px;
+    
+}
+.header2-detalis{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.header2-detalis input{
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.header2-detalis .btn{
+ background-color: var(--main-color);
+ color: white;
+}
+.header2-detalis select{
+    margin-right: 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;   
+}
+/* End Header */
+
+/* start landing */
+.landing{
+    background-image: url("../imgs/landing.png");
+    height: 80vh;
+    position: relative;
+}
+.landing h1{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    word-spacing: 5px;
+    width: 600px;
+}
+.landing .info{
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    word-spacing: 5px;
+    text-align: center;
+}
+.landing .info p{
+    margin-bottom: 30px;
+}
+.landing .info input{
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+.landing .facilities{
+    background-color: white;
+    width: 700px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 50px;
+    border-radius: 10px;
+    border: var(--main-color) 5px solid;
+}
+.landing .facilities h2{
+    color: var(--main-color);
+    text-align: center;
+}
+.landing .facilities .content{
+    display: flex;
+    color: var(--main-color);
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+.landing .facilities .content .card{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.landing .facilities .content .card .text{
+    margin-top: 10px;
+}
+/* End landing */
+
+/* Start Room Section */
+.room{
+padding-top:120px;
+text-align: center;
+}
+.room h2{
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-weight: 400;
+}
+.room .content{
+padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.room .content .card{
+    width: 45%;
+    background-image: url(../imgs/card1.png);
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.room .content .card h1{
+    color: white;
+    font-size: 25px;
+}
+.room .content .card input{
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+}
+/* End Room Section */
+
+/* Start Booking Section */
+.booking{
+    padding-top: 10px;
+    text-align: center;
+}
+.booking h2{
+    color: var(--secondary-color);
+    word-spacing: 5px;
+    font-weight: 400;
+}
+.booking input{
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 20px;
+    padding: 15px 65px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+/* End Booking Section */
+
+/* Start footer Section */
+.footer{
+ background-color: black;
+ margin-top:50px;
+}
+.footer .container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .info{
+ width: 30%;
+}
+.footer .info img{
+    width: 35%;
+    margin: 15px;
+    margin-top: 30px;
+}
+.footer .info p{
+    margin-top: 25px;
+    margin-left: 12px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+.footer .info p span{
+    font-weight: bold;
+}
+
+.footer .text{
+    width: 30%;
+}
+.footer .text p{
+    margin-top: 25px;
+    line-height: 2.5;
+    font-weight: 100;
+}
+
+.footer .submit{
+    width: 30%;
+}
+.footer .submit p{
+    margin-top: 26px;
+}
+.footer .submit [type="text"]{
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 5px;
+}
+.footer .submit [type="submit"]{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    padding: 16px;
+    width: 86%;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+}
+/* End footer Section */
